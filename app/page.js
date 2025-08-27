@@ -4,19 +4,19 @@ import { useState } from "react";
 
 export default function Page() {
   const [language, setLanguage] = useState("English");
-  const [theme, setTheme] = useState("light"); // "auto" | "light" | "dark"
-  const [accent, setAccent] = useState("#a855f7"); // purple-500
+  const [theme, setTheme] = useState("light"); 
+  const [accent, setAccent] = useState("#a855f7"); 
   const [reduceMotion, setReduceMotion] = useState(true);
   const [autoPlay, setAutoPlay] = useState(true);
   const [hqPhoto, setHqPhoto] = useState(false);
 
   const ACCENTS = [
-    "#f97316", // orange-500
-    "#ef4444", // red-500
-    "#22c55e", // green-500
-    "#06b6d4", // cyan-500
-    "#a855f7", // purple-500
-    "#ec4899", // pink-500
+    "#f97316", 
+    "#ef4444", 
+    "#22c55e", 
+    "#06b6d4", 
+    "#a855f7", 
+    "#ec4899", 
   ];
 
   const resetToDefault = () => {
@@ -30,9 +30,8 @@ export default function Page() {
 
   const onSave = (e) => {
     e.preventDefault();
-    // Aquí podrías persistir en localStorage o llamar a una API
+    
     console.log({ language, theme, accent, reduceMotion, autoPlay, hqPhoto });
-    alert("Preferences saved ✅ (ver consola)");
   };
 
   return (
@@ -71,7 +70,7 @@ export default function Page() {
 
         <div className="my-6 h-px bg-gray-100" />
 
-        {/* Interface theme */}
+        {/* Interface  */}
         <div className="space-y-3">
           <label className="text-sm font-medium text-gray-700">
             Interface theme
@@ -123,7 +122,7 @@ export default function Page() {
 
         <div className="my-6 h-px bg-gray-100" />
 
-        {/* Accent color */}
+        
         <div className="space-y-3">
           <label className="text-sm font-medium text-gray-700">
             Accent color
@@ -203,7 +202,7 @@ export default function Page() {
   );
 }
 
-/* --- Toggle sub-componente (en el mismo archivo para monolito) --- */
+/* --- Toggle sub-componente */
 function ToggleRow({ label, checked, setChecked }) {
   return (
     <div className="flex items-center justify-between">
