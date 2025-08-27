@@ -70,7 +70,7 @@ export default function Page() {
 
         <div className="my-6 h-px bg-gray-100" />
 
-        {/* Interface  */}
+        {/*Interface */}
         <div className="space-y-3">
           <label className="text-sm font-medium text-gray-700">
             Interface theme
@@ -122,7 +122,7 @@ export default function Page() {
 
         <div className="my-6 h-px bg-gray-100" />
 
-        
+        {/* Accent color */}
         <div className="space-y-3">
           <label className="text-sm font-medium text-gray-700">
             Accent color
@@ -184,7 +184,7 @@ export default function Page() {
             <button
               type="button"
               className="rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
-              onClick={() => alert("Canceled")}
+             
             >
               Cancel
             </button>
@@ -202,7 +202,7 @@ export default function Page() {
   );
 }
 
-/* --- Toggle sub-componente */
+/* Toggle sub */
 function ToggleRow({ label, checked, setChecked }) {
   return (
     <div className="flex items-center justify-between">
